@@ -1,0 +1,20 @@
+"" Load Plugins
+call plug#begin('~/.vim/plugged')
+               Plug 'tpope/vim-fugitive'
+               Plug 'flazz/vim-colorschemes'
+               Plug 'scrooloose/nerdtree'
+               Plug 'tpope/vim-surround'
+               Plug 'scrooloose/syntastic'
+               Plug 'bling/vim-airline'
+               Plug 'vim-airline/vim-airline-themes'
+               Plug 'ctrlpvim/ctrlp.vim'
+call plug#end()
+ 
+set nocompatible
+filetype plugin on
+set background=dark
+ 
+if has('gui_running')
+               colorscheme solarized
+               set guifont=Lucida_Console:h10
+endif
